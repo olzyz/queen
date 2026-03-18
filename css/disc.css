@@ -1,0 +1,83 @@
+main .padding-element {
+    padding: 15px 10px;
+}
+
+main h1, h2 {
+    text-align: center;
+}
+
+.table-wrapper {
+    height: 70vh;
+    overflow-x: auto;
+}
+
+.table__discography {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    min-width: 400px;
+}
+
+.table__discography thead tr {
+    background-color: #14342B; 
+    color: #ffffff;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.table__discography th,
+.table__discography td {
+    padding: 12px 15px; 
+}
+
+.table__discography tbody tr {
+    border-bottom: 1px solid #dddddd; 
+}
+
+.table__discography tbody tr, img {
+    transition: all 0.4s ease;
+}
+
+.table__discography tbody tr:hover {
+    background-color: #E1E2EF;
+    cursor: pointer;
+}
+
+.table__discography tbody tr:hover img {
+    scale: 1.15;
+}
+
+.table__discography td:nth-child(2) {
+    font-size: 1.7rem;
+}
+
+.table__discography a:hover {
+    text-decoration: underline;
+}
+
+.table__discography th:nth-child(1) { width: 15%; } 
+.table__discography th:nth-child(2) { width: 25%; } 
+.table__discography th:nth-child(3) { width: 30%; } 
+.table__discography th:nth-child(4) { width: 30%; } 
+
+dt {
+    font-size: 1.5rem;
+}
+
+dd {
+    padding-bottom: 20px;
+}
+
+dd:last-of-type {
+    padding: 0;
+}
+
+dt[id] {
+    scroll-margin-top: 200px; 
+}
+
+.album_covers {
+    width: 100px;
+    height: 100px;
+}
