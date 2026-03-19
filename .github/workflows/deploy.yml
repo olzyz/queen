@@ -1,4 +1,4 @@
-name: Deploy Website via FTP
+name: Deploy Website via SFTP
 
 on:
   push:
@@ -13,12 +13,13 @@ jobs:
     - name: Get latest code
       uses: actions/checkout@v4
 
-    - name: Sync files via FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+    - name: SFTP Deploy
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
-        server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
+        server: ${{ secrets.FTP_SERVER }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /home/uni/zyz0006/public_html/queen/
-        protocol: sftp
         port: 22
+        local_path: './*'
+        remote_path: '/home/uni/zyz0006/public_html/queen' 
+        sftp_only: true
