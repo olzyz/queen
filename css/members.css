@@ -1,0 +1,73 @@
+main .padding-element {
+    padding: 10px 10px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.box-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    transition: margin-left 0.8s ease, margin-right 0.8s ease;
+}
+
+.portrait {
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+#freddy {
+    background-image: url(../img/portraits/freddy.png);
+    transition: filter 0.3s ease;
+}
+#brian {
+    background-image: url(../img/portraits/brian.png);
+    transition: filter 0.3s ease;
+}
+#roger {
+    background-image: url(../img/portraits/roger.png);
+    transition: filter 0.3s ease;
+}
+#john {
+    background-image: url(../img/portraits/john.png);
+    transition: filter 0.3s ease;
+}
+
+.member:hover {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.member:hover #freddy {
+    filter: drop-shadow(0 0 10px #8f5941);
+}
+.member:hover #brian {
+    filter: drop-shadow(0 0 10px #207f93);
+}
+.member:hover #roger {
+    filter: drop-shadow(0 0 10px #dcc96b);
+}
+.member:hover #john {
+    filter: drop-shadow(0 0 10px #627e4e);
+}
+
+
+h2, h3 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+}
