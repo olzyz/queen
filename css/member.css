@@ -2,6 +2,10 @@
     padding: 10px 10px;
 }
 
+#margin-hr {
+    margin: 20px 0 10px 0;
+}
+
 .flex {
     display: flex;
 }
@@ -70,4 +74,8 @@ figcaption {
 
 .slide.active {
     display: block;
+}
+
+.info-block {
+    align-items: center;
 }
