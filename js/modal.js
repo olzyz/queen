@@ -32,3 +32,12 @@ closeModalButtons.forEach(button => {
         }
     });
 });
+
+
+const tableLinks = document.querySelectorAll('.js-open-modal a');
+
+tableLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
+});
