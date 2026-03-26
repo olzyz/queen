@@ -290,6 +290,11 @@ footer {
     margin-top: 10px;
 }
 
+#backbut_txt {
+    width: fit-content; 
+    height: fit-content;
+}
+
 #ebox {
     background: #ffffff1f;
     border: 1px solid #ffffff33;
@@ -335,6 +340,11 @@ nav a:hover {
     scale: 1.05;
 }
 
+#emform p {
+    margin-bottom: 10px; 
+    font-size: 12px;
+}
+
 
 
 
@@ -362,7 +372,8 @@ nav a:hover {
         width: 15%;
     }
     #ftnav {
-        font-size: 0.7em;
+        font-size: 0.8em;
+        line-height: 2.5;
     }
     #socials {
         gap: 30px
