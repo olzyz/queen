@@ -10,6 +10,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .member {
